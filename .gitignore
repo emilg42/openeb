@@ -1,22 +1,40 @@
-# Build folders
-/_build*/
-/build*/
+# Local cache
+.cache/
+.cache/**
 
-# Python 
-__pycache__/
-*.pyc
+
+# Python virtual environments
 .venv/
+venv/
+env/
+ENV/
 
-# cache
-.cache
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
 
+# Packaging/build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test/cache tools
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE/editor
 .vscode/
-.vs/
-out/
-.idea
+.idea/
 
-# Raw data index files
-*.raw.tmp_index
+# OS files
+.DS_Store
+Thumbs.db
 
-# Generated open source license RST file
-doc/source/open_source_licenses.rst
+# Environment variables
+.env
+.env.*
